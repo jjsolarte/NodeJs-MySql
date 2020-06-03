@@ -1,0 +1,26 @@
+<div class="container p-4">
+	<div class="row">
+		<div class="col-md-4 mx-auto">
+			<div class="card">
+				<div class="card-body">
+					<form action="/links/edit/{{links.idlinks}}" method="POST">
+						<div class="form-goup">
+							<input type="text" value="{{links.title}}" class="form-control" name="title" placeholder="Title" autofocus="true">
+						</div>
+						<div class="form-goup">
+							<input type="url" value="{{links.url}}" name="url" class="form-control" placeholder="URL">
+						</div>
+						<div class="form-goup">
+							<textarea name="description" class="form-control" rows="2" placeholder="Description">{{links.description}}</textarea>
+						</div>
+						<div class="form-goup">
+							<button class="btn btn-success btn-block">
+								Save
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
